@@ -1,0 +1,89 @@
+
+/* INIZIO NAVBAR */
+.navbar-custom {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1050 !important; 
+    background-color: #fff;
+}
+
+.navbar-custom .navbar-collapse {
+    position: relative;
+    z-index: 1051 !important;
+}
+
+.text-custom {
+    font-family: 'Rubik Glitch', sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 50px;
+}
+
+.nav-link {
+    font-family: "Playfair Display SC", serif;
+}
+
+
+/* INIZIO HOME */
+.btn-custom{
+    border: solid 1px black;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: 0.5s;
+}
+
+.btn-custom:hover{
+    color: black;
+    border: solid 1px black;
+    transform: scale(1.3);
+}
+
+/* INIZIO INDEX */
+h4{
+    font-family: "Press Start 2P", serif;
+    text-align: center;
+    color: #ffc107;
+}
+
+/* INZIO CREATE */
+.container-custom-1{
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url('/public/media/backround-img-create.jpg');
+    background-position: center;
+    margin-top: 80px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.form-custom{
+    margin-inline: auto;
+    width: 65%;
+    padding: 20px;
+    border-radius: 20px;
+}
+.star-item {
+    font-size: 2rem;
+    cursor: pointer;
+    color: #ccc;
+    transition: color 0.1s ease-in-out;
+}
+
+.star-item.active {
+    color: #ffc107;
+}
+
+.btn-custom-2{
+    border: solid 1px black;
+    background-color: transparent;
+    backdrop-filter: blur(8px);
+    color: #ffc107;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.btn-custom-2:hover{
+    transform: scale(1.2);
+    background-color: #ffc107;
+    font-size: 20px;
+    color: white;
+}

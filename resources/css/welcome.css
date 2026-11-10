@@ -1,0 +1,7 @@
+.container-custom{
+    background-image: url(media/javier-martinez-hUD0PUczwJQ-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+}
