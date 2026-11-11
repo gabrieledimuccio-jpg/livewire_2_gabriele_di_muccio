@@ -9,6 +9,7 @@ class Article extends Model
     //
     protected $fillable = [
         'name',
+        'title',
         'review',
         'rating',
         'img',

@@ -6,7 +6,7 @@
     left: 0;
     width: 100%;
     z-index: 1050 !important; 
-    background-color: #fff;
+    background-color: #f0eded;
 }
 
 .navbar-custom .navbar-collapse {
@@ -44,13 +44,32 @@ h4{
     text-align: center;
     color: #ffc107;
 }
+h2{
+    font-family: "Playfair Display SC", serif;
+    font-size: 45px;
+}
+
+.card-review {
+    min-height: 400px; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow:rgba(255, 255, 255, 0.2);
+}
+
+.card-review:hover {
+    transform: translateY(-5px); 
+}
 
 /* INZIO CREATE */
 .container-custom-1{
     position: relative;
     z-index: 1;
     min-height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url('/public/media/backround-img-create.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url('/media/purple-glow-neon-wireframe-background-260nw-2760882349.jpg');
     background-position: center;
     margin-top: 80px;
     background-repeat: no-repeat;
@@ -62,6 +81,7 @@ h4{
     padding: 20px;
     border-radius: 20px;
 }
+
 .star-item {
     font-size: 2rem;
     cursor: pointer;
@@ -74,7 +94,7 @@ h4{
 }
 
 .btn-custom-2{
-    border: solid 1px black;
+    border: solid 1px #ffc107;
     background-color: transparent;
     backdrop-filter: blur(8px);
     color: #ffc107;
@@ -86,4 +106,52 @@ h4{
     background-color: #ffc107;
     font-size: 20px;
     color: white;
+}
+
+/* INZIO SHOW */
+
+.article-card {
+    border-radius: 12px;
+    border: 1px solid rgb(186, 176, 176);
+    overflow: hidden;
+    width: 65%;
+    max-height: 82vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.article-card .card-img-top {
+    width: 100%;
+    height: 40vh; 
+    object-fit: cover; 
+    object-position: center; 
+}
+
+.article-card .card-body {
+    padding: 1.5rem;
+    overflow-y: auto; 
+}
+
+@media (max-width: 768px) {
+    .article-card {
+        width: 95%;
+    }
+    .article-card .card-img-top {
+        height: 30vh;
+    }
+}
+.btn-edit-custom{
+    margin-right: 20px;
+    padding: 5.5px !important;
+    border: rgb(233, 228, 228) solid 2px;
+    border-radius: 8px;
+    background-color: rgb(233, 228, 228);
+    
+}
+
+.btn-edit-custom:hover{
+    border: #d3d8dd solid 2px;
+    background-color: #d3d8dd;
 }

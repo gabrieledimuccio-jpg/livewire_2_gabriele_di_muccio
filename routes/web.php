@@ -14,3 +14,15 @@ Route::get('articles/create', [ArticleController::class, 'create'])->name('creat
 
 // STORE
 Route::post('articles/store', [ArticleController::class, 'store'])->name('store');
+
+// SHOW
+Route::get('articles/show/{article}', [ArticleController::class, 'show'])->name('show');
+
+// EDIT
+Route::get('/article/edit/{article}', [ArticleController::class, 'edit'])->name('edit');
+
+// UPDATE
+Route::put('/article/update/{article}', [ArticleController::class, 'update'])->name('update');
+
+// DESTROY
+Route::delete('/article/{article}', [ArticleController::class, 'destroy'])->name('destroy');
