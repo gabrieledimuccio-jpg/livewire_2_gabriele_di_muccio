@@ -1,12 +1,12 @@
 <div>
     <div>
-        <form class="form-custom" wire:submit="store">
+        <form class="form-custom-1" wire:submit="updateArticle">
             @if (session('message'))
             <div class="alert alert-success">
                 {{ session('message') }}
             </div>
             @endif
-            <h4>DICCI LA TUA</h4>
+            <h4>AGGIORNA L'ARTICOLO</h4>
             <div class="mb-2">
                 <label for="name" class="form-label text-white">Nome dell'utente</label>
                 <input wire:model="name" type="text" class="form-control" id="name" aria-describedby="name" required>
@@ -20,6 +20,11 @@
             <div class="mb-2">
                 <label for="img" class="form-label text-white">Inserisci immagine</label>
                 <input wire:model="img" type="file" class="form-control d-flex me-3" id="img">
+            </div>
+            
+            <div class="mb-3">
+                <span class="form-label">Immagine attuale:</span>
+                <img src="{{ Storage::url($article->img) }}" alt="{{ $article->title }}" width="400" height="300" srcset="">
             </div>
             
             <div class="mb-2">
@@ -44,7 +49,7 @@
                     </div>
                     <div class="col-12">
                         <div class="d-flex justify-content-center ">
-                            <button type="submit" class="btn btn-primary btn-custom-2 w-100 p-2">Crea recensione</button>
+                            <button type="submit" class="btn btn-primary btn-custom-2 w-100 p-2">Aggiorna recensione</button>
                         </div>
                     </div>
                 </div>

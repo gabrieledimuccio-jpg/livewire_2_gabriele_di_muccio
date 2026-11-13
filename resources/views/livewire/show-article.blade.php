@@ -24,11 +24,8 @@
                     
                     <a href="{{ route('edit', $article) }}" class="btn btn-edit-custom">✏️ Modifica</a>
                     
-                    <form action="{{ route('destroy', $article) }}" method="POST" class="m-0">
-                        @csrf
-                        @method('DELETE')
-                        <button type="submit" class="btn btn-danger" onclick="return confirm('Sei sicuro di voler eliminare questa destinazione?')">🗑️ Elimina</button>
-                    </form>
+                    <button wire:click="destroy({{ $article->id }})" type="submit" class="btn btn-danger" onclick="return confirm('Sei sicuro di voler eliminare questa recensione?')">🗑️ Elimina</button>
+                    
                 </div>
             </div>
         </div>
